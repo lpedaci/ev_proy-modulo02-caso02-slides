@@ -116,7 +116,7 @@ También funciona swipe táctil (móvil / tablet).
 
 ## Créditos
 
-- **Docente**: Prof. Pedaci, Lourdes — [LinkedIn](https://www.linkedin.com/in/lourdes-pedaci/)
+- **Autor**: Prof. Pedaci, Lourdes — [LinkedIn](https://www.linkedin.com/in/lourdes-pedaci/)
 - **Institución**: Instituto Leonardo Murialdo · 7mo Informática 2026
 - **Año lectivo:** 2026  
 - **Caso de uso:** Estudio Contable Gómez, Caseros, Tres de Febrero (usuaria ficticia, metodología real)  
@@ -125,3 +125,7 @@ También funciona swipe táctil (móvil / tablet).
 ---
 
 > _"Sensor incorrecto → dato incorrecto → decisión incorrecta."_
+
+---
+
+*Material de uso instruccional. Los casos de uso son ficticios y fueron construidos como ejemplos pedagógicos para modelar la metodología de la asignatura.*
