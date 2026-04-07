@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Primera Presentación de Proyecto — ILM 7mo Informática 2026 · SensorOffice</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&family=DM+Mono:wght@400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div id="progress-bar"></div>
+<div id="kbd-hint"><kbd>←</kbd><kbd>→</kbd> navegar · <kbd>Esc</kbd> inicio</div>
+
+<div id="stage">
+
+  <!-- ══════════════════════════════════════════════════
+       SLIDE 1 — CARÁTULA
+  ══════════════════════════════════════════════════ -->
+  <div class="slide slide-cover active" data-slide="0">
+    <div class="cover-glow"></div>
+    <div class="cover-glow2"></div>
+
+    <div class="cover-kicker">Instituto Leonardo Murialdo · 7mo Informática 2026</div>
+    <div class="cover-title">Primera<br>presentación<br>de <span class="hl">proyecto</span></div>
+    <div class="cover-divider"></div>
+    <div class="cover-meta">
+      <div class="cover-meta-row">
+        <div class="cover-dot"></div>
+        <span>Equipo <strong>N° —</strong></span>
+      </div>
+      <div class="cover-meta-row" style="flex-direction:column; align-items:flex-start; gap:.4rem; padding-left:15px;">
+        <div class="cover-team-table" id="team-names">
+          <div class="cover-member-num">01</div><div class="cover-member-name">Apellido, Nombre</div>
+          <div class="cover-member-num">02</div><div class="cover-member-name">Apellido, Nombre</div>
+          <div class="cover-member-num">03</div><div class="cover-member-name">Apellido, Nombre</div>
+          <div class="cover-member-num">04</div><div class="cover-member-name">Apellido, Nombre</div>
+          <div class="cover-member-num">05</div><div class="cover-member-name">Apellido, Nombre</div>
+        </div>
+      </div>
+      <div class="cover-meta-row" style="margin-top:.5rem;">
+        <div class="cover-dot"></div>
+        <span><strong>Mayo 2026</strong></span>
+      </div>
+    </div>
+
+    <div class="cover-bottom-bar"></div>
+    <div class="cover-institute">Instituto Leonardo Murialdo</div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       SLIDE 2 — CASO DE USO: EL PROBLEMA
+  ══════════════════════════════════════════════════ -->
+  <div class="slide slide-content" data-slide="1">
+    <div class="slide-header">
+      <div>
+        <div class="slide-section-label">E01 — Identificación del problema</div>
+        <div class="slide-h1">Caso de uso: Estudio Contable Gómez</div>
+      </div>
+      <div class="slide-num-badge">01 / 12</div>
+    </div>
+    <div class="slide-body">
+      <div class="cols-12">
+        <!-- Left: user card -->
+        <div style="display:flex;flex-direction:column;gap:.75rem;">
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:.6rem;flex-shrink:0;">
+            <!-- User placeholder -->
+            <div style="position:relative;border-radius:8px;overflow:hidden;height:110px;background:linear-gradient(135deg,rgba(26,58,92,0.9),rgba(13,17,23,0.95));border:1px solid rgba(93,202,165,0.2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;">
+              <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><circle cx="19" cy="14" r="7" fill="rgba(93,202,165,0.25)" stroke="rgba(93,202,165,0.5)" stroke-width="1.5"/><path d="M4 34c0-8.284 6.716-15 15-15s15 6.716 15 15" stroke="rgba(93,202,165,0.5)" stroke-width="1.5" stroke-linecap="round"/></svg>
+              <div style="font-family:'DM Sans',sans-serif;font-weight:700;font-size:.84rem;color:#fff;line-height:1.2;text-align:center;">Valeria Gómez</div>
+              <div style="font-family:'DM Sans',sans-serif;font-size:.67rem;color:var(--slide-sub);text-align:center;">Socia admin. · 44 años</div>
+              <div style="position:absolute;top:.45rem;right:.45rem;"><span style="font-family:'DM Sans',sans-serif;font-size:.6rem;font-weight:700;background:rgba(93,202,165,0.15);color:var(--slide-accent);border:1px solid rgba(93,202,165,0.3);border-radius:4px;padding:1px 5px;">Usuario</span></div>
+            </div>
+            <!-- Lugar placeholder -->
+            <div style="position:relative;border-radius:8px;overflow:hidden;height:110px;background:linear-gradient(135deg,rgba(20,10,40,0.95),rgba(50,20,90,0.9));border:1px solid rgba(167,139,250,0.2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;">
+              <svg width="40" height="36" viewBox="0 0 40 36" fill="none"><rect x="4" y="14" width="32" height="22" rx="1" fill="rgba(167,139,250,0.15)" stroke="rgba(167,139,250,0.5)" stroke-width="1.5"/><path d="M2 14L20 2l18 12" stroke="rgba(167,139,250,0.5)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="15" y="22" width="10" height="14" rx="1" fill="rgba(167,139,250,0.2)" stroke="rgba(167,139,250,0.4)" stroke-width="1"/><rect x="7" y="18" width="8" height="7" rx="1" fill="rgba(167,139,250,0.15)" stroke="rgba(167,139,250,0.35)" stroke-width="1"/><rect x="25" y="18" width="8" height="7" rx="1" fill="rgba(167,139,250,0.15)" stroke="rgba(167,139,250,0.35)" stroke-width="1"/></svg>
+              <div style="font-family:'DM Sans',sans-serif;font-weight:700;font-size:.84rem;color:#fff;line-height:1.2;text-align:center;">Estudio Contable Gómez</div>
+              <div style="font-family:'DM Sans',sans-serif;font-size:.67rem;color:var(--slide-sub);text-align:center;">Caseros · ~180 m² · 3 oficinas</div>
+              <div style="position:absolute;top:.45rem;right:.45rem;"><span style="font-family:'DM Sans',sans-serif;font-size:.6rem;font-weight:700;background:rgba(167,139,250,0.12);color:var(--slide-purple);border:1px solid rgba(167,139,250,0.3);border-radius:4px;padding:1px 5px;">Lugar</span></div>
+            </div>
+          </div>
+
+          <div class="card card-accent">
+            <div class="card-label">Usuario entrevistado</div>
+            <div style="display:flex;align-items:center;gap:.85rem;margin-bottom:.55rem;">
+              <div style="width:38px;height:38px;border-radius:50%;background:rgba(93,202,165,0.15);display:flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:800;font-size:.9rem;color:var(--slide-accent);flex-shrink:0;">VG</div>
+              <div>
+                <div style="font-family:'DM Sans',sans-serif;font-weight:700;font-size:.92rem;color:#fff;">Valeria Gómez</div>
+                <div style="font-family:'DM Sans',sans-serif;font-size:.78rem;color:var(--slide-sub);">Socia administradora · Estudio Contable Gómez, Caseros</div>
+              </div>
+            </div>
+            <div style="font-size:.8rem;color:var(--slide-sub);line-height:1.6;">44 años · 8 empleados + 2 socios · tecnología 3/5 · PC escritorio + celular Samsung · SmartThings instalado</div>
+          </div>
+
+          <div class="card">
+            <div class="card-label">Técnica de relevamiento</div>
+            <div class="card-body">
+              <p>Dos entrevistas: <strong style="color:#fff;">general (Bloques A–C)</strong> y <strong style="color:#fff;">específica (Bloques D–G)</strong> incluyendo bloques de hardware exclusivos.</p>
+              <p style="margin-top:.3rem;">Bloques E (entorno físico) y F (instalación) son nuevos — exclusivos de proyectos físicos.</p>
+            </div>
+          </div>
+
+          <div class="note success">✓ El usuario fue entrevistado físicamente antes de elegir cualquier componente de hardware</div>
+        </div>
+
+        <!-- Right: problems -->
+        <div style="display:flex;flex-direction:column;gap:.7rem;">
+          <div class="card-label" style="color:var(--slide-sub);font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Lo que Valeria nos dijo (síntomas)</div>
+          <div class="hci-list">
+            <div class="hci-item">
+              <div class="hci-icon">🌡️</div>
+              <div class="hci-text"><strong>"No sé si el ambiente está bien hasta que alguien se queja"</strong> — 3 a 4 quejas de temperatura por semana</div>
+            </div>
+            <div class="hci-item">
+              <div class="hci-icon">💡</div>
+              <div class="hci-text"><strong>"La factura de luz subió mucho este año"</strong> — splits encendidos aunque no haya nadie, sin forma de apagarlos de forma remota</div>
+            </div>
+            <div class="hci-item">
+              <div class="hci-icon">🫁</div>
+              <div class="hci-text"><strong>"La oficina del fondo siempre huele a cerrado"</strong> — nadie mide CO₂ ni humedad, no hay activación de ventilación a tiempo</div>
+            </div>
+            <div class="hci-item">
+              <div class="hci-icon">📶</div>
+              <div class="hci-text"><strong>WiFi solo en oficina central</strong> — la red no cubre los demás ambientes: restricción de hardware crítica</div>
+            </div>
+            <div class="hci-item">
+              <div class="hci-icon">📊</div>
+              <div class="hci-text"><strong>Dificultad de gestión ambiental: sin sistema</strong> — control 100% manual y visual, sin datos históricos</div>
+            </div>
+          </div>
+          <div class="note hw" style="margin-top:.2rem;">⚙️ Proyecto hardware + software: la red de sensores y el dashboard son ambas capas obligatorias. Ninguna es opcional.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       SLIDE 3 — ANÁLISIS: SÍNTOMAS VS CAUSAS
+  ══════════════════════════════════════════════════ -->
+  <div class="slide slide-content" data-slide="2">
+    <div class="slide-header">
+      <div>
+        <div class="slide-section-label">E01 — Análisis de la entrevista</div>
+        <div class="slide-h1">Del síntoma a la causa real</div>
+      </div>
+      <div class="slide-num-badge">02 / 12</div>
+    </div>
+    <div class="slide-body">
+      <div class="section-intro">El error más común: construir una solución al síntoma en lugar de a la causa. Si el sistema solo muestra temperatura pero no actúa ni alerta, el problema no se resuelve.</div>
+
+      <div class="card" style="flex:1;">
+        <div style="overflow-x:auto;">
+          <table class="impact-table" style="width:100%;">
+            <thead>
+              <tr>
+                <th style="width:28%">Síntoma (lo que dice Valeria)</th>
+                <th style="width:35%">Causa real (lo que es)</th>
+                <th style="width:37%">Solución técnica</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col-symptom">"No sé si el ambiente está bien hasta que alguien se queja"</td>
+                <td class="col-cause">No hay medición objetiva del ambiente. La incomodidad se detecta tarde, cuando ya afectó la productividad</td>
+                <td class="col-rf">RF01 — Dashboard en tiempo real<br>RF03 — Alertas automáticas por umbral<br>→ DHT22, BH1750 por ambiente</td>
+              </tr>
+              <tr>
+                <td class="col-symptom">"La factura de luz subió mucho"</td>
+                <td class="col-cause">Splits encendidos sin nadie en el ambiente. Equipos viejos sin conectividad. Sin detección de presencia</td>
+                <td class="col-rf">RF04 — Alerta + apagado remoto vía SmartThings<br>→ PIR HC-SR501 + enchufe inteligente Samsung</td>
+              </tr>
+              <tr>
+                <td class="col-symptom">"La oficina del fondo huele a cerrado"</td>
+                <td class="col-cause">CO₂ elevado por falta de ventilación medida objetivamente. Sin datos, no hay criterio para ventilar</td>
+                <td class="col-rf">RF03 — Alerta de calidad de aire<br>→ Sensor MQ-135 en cada ambiente</td>
+              </tr>
+              <tr>
+                <td class="col-symptom">"WiFi solo en la oficina del router"</td>
+                <td class="col-cause">Los nodos ESP32 no pueden conectarse sin señal. La cobertura parcial invalida el sistema completo</td>
+                <td class="col-rf">RHW06 — Repetidor WiFi obligatorio antes del despliegue<br>→ Prerequisito de infraestructura</td>
+              </tr>
+              <tr>
+                <td class="col-symptom">"Solo yo debería poder cambiar los umbrales"</td>
+                <td class="col-cause">No hay separación de roles ni control de acceso al sistema</td>
+                <td class="col-rf">RF06 — Perfil administradora (Valeria) y visor (empleados)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="cols-2" style="gap:.75rem;">
+        <div class="note success">✓ Cada RF se puede trazar hasta una respuesta concreta de la entrevista. Si no, no tiene razón de existir.</div>
+        <div class="note hw">🔌 Los requerimientos de hardware (RHW) también se derivan de síntomas, no se eligen de antemano. El RHW06 (repetidor) surgió del síntoma de cobertura parcial.</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       SLIDE 4 — ARQUITECTURA DEL SISTEMA
+  ══════════════════════════════════════════════════ -->
+  <div class="slide slide-content" data-slide="3">
+    <div class="slide-header">
+      <div>
+        <div class="slide-section-label">E01 — Sistema hardware + software</div>
+        <div class="slide-h1">Arquitectura: SensorOffice</div>
+      </div>
+      <div class="slide-num-badge">03 / 12</div>
+    </div>
+    <div class="slide-body">
+      <div class="cols-12" style="flex:1;align-items:start;">
+
+        <div style="display:flex;flex-direction:column;gap:.85rem;">
+          <div class="card-label" style="color:var(--slide-sub);font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Capas del sistema</div>
+          <div class="arch-flow">
+            <div class="arch-layer hw">
+              <div class="arch-layer-icon">🔌</div>
+              <div>
+                <div class="arch-layer-text">Capa Hardware — Nodos ESP32</div>
+                <div class="arch-layer-sub">4 nodos · DHT22, MQ-135, BH1750, PIR, SCT-013 · repetidor WiFi + enchufes SmartThings</div>
+              </div>
+            </div>
+            <div class="arch-arrow">↓ WiFi / MQTT (Mosquitto)</div>
+            <div class="arch-layer sw">
+              <div class="arch-layer-icon">⚙️</div>
+              <div>
+                <div class="arch-layer-text">Backend — Node.js + Express</div>
+                <div class="arch-layer-sub">Suscribe al broker MQTT · persiste en PostgreSQL · API REST · evalúa umbrales · integración SmartThings API</div>
+              </div>
+            </div>
+            <div class="arch-arrow">↓ API REST / WebSocket</div>
+            <div class="arch-layer cloud">
+              <div class="arch-layer-icon">📊</div>
+              <div>
+                <div class="arch-layer-text">Frontend — Dashboard React</div>
+                <div class="arch-layer-sub">Tiempo real por ambiente · historial · alertas · responsive PC + celular</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-purple">
+            <div class="card-label purple">Variables medidas por nodo</div>
+            <div class="sensor-mini-grid" style="margin-top:.4rem;">
+              <div class="sensor-mini"><div class="sensor-mini-icon">🌡️</div><div class="sensor-mini-name">Temperatura</div><div class="sensor-mini-chip">DHT22 · 30 seg</div></div>
+              <div class="sensor-mini"><div class="sensor-mini-icon">💧</div><div class="sensor-mini-name">Humedad</div><div class="sensor-mini-chip">DHT22 · 30 seg</div></div>
+              <div class="sensor-mini"><div class="sensor-mini-icon">🫁</div><div class="sensor-mini-name">CO₂ / Aire</div><div class="sensor-mini-chip">MQ-135 · 60 seg</div></div>
+              <div class="sensor-mini"><div class="sensor-mini-icon">☀️</div><div class="sensor-mini-name">Luminosidad</div><div class="sensor-mini-chip">BH1750 · 60 seg</div></div>
+              <div class="sensor-mini"><div class="sensor-mini-icon">🚶</div><div class="sensor-mini-name">Presencia</div><div class="sensor-mini-chip">PIR HC-SR501</div></div>
+              <div class="sensor-mini"><div class="sensor-mini-icon">⚡</div><div class="sensor-mini-name">Consumo eléct.</div><div class="sensor-mini-chip">SCT-013</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:.75rem;">
+          <div class="card-label" style="color:var(--slide-sub);font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;">Línea de base — Datos medibles del caso</div>
+          <div class="baseline-grid" style="grid-template-columns:1fr 1fr;">
+            <div class="baseline-card highlight">
+              <div class="bc-label">Quejas de temperatura / semana</div>
+              <div class="bc-before">3–4</div>
+              <div class="bc-after">→ objetivo: 0–1</div>
+            </div>
+            <div class="baseline-card highlight">
+              <div class="bc-label">Tiempo de detección de problema ambiental</div>
+              <div class="bc-before" style="font-size:.88rem;">Horas (cuando avisan)</div>
+              <div class="bc-after">→ objetivo: &lt;5 min (alerta auto)</div>
+            </div>
+            <div class="baseline-card">
+              <div class="bc-label">Registro de consumo eléctrico</div>
+              <div class="bc-before" style="font-size:.85rem;">Ninguno</div>
+              <div class="bc-after">→ reporte mensual automático</div>
+            </div>
+            <div class="baseline-card">
+              <div class="bc-label">Comodidad tecnológica (Valeria)</div>
+              <div class="bc-before" style="color:var(--slide-warm);">3 / 5</div>
+              <div class="bc-warn">→ interfaz en lenguaje natural</div>
+            </div>
+            <div class="baseline-card hw">
+              <div class="bc-label">Ambientes a monitorear ★HW</div>
+              <div class="bc-before" style="font-size:.85rem;color:var(--slide-purple);">4 sectores</div>
+              <div class="bc-purple">→ 4 nodos ESP32 mínimo</div>
+            </div>
+            <div class="baseline-card hw">
+              <div class="bc-label">Conectividad WiFi ★HW</div>
+              <div class="bc-before" style="font-size:.8rem;color:var(--slide-purple);">Solo oficina central</div>
+              <div class="bc-purple">→ repetidor WiFi obligatorio</div>
+            </div>
+          </div>
+          <div class="note info" style="font-size:.7rem;">★HW = datos obtenidos de los bloques E y F de la entrevista. Sin ellos, el diseño físico del sistema no puede hacerse.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       SLIDE 5 — REQUERIMIENTOS FUNCIONALES
+  ══════════════════════════════════════════════════ -->
+  <div class="slide slide-content" data-slide="4">
+    <div class="slide-header">
+      <div>
+        <div class="slide-section-label">E03 — Documento técnico</div>
+        <div class="slide-h1">Requerimientos Funcionales (RF)</div>
+      </div>
+      <div class="slide-num-badge">04 / 12</div>
+    </div>
+    <div class="slide-body">
+      <div class="cols-2" style="flex:1;align-items:start;">
+        <div class="req-list">
+          <div class="req-item" style="border-color:rgba(93,202,165,0.2);">
+            <div class="req-id">RF01</div>
+            <div class="req-text">Dashboard en tiempo real por ambiente<small>Temperatura, humedad, CO₂ y luminosidad actuales de cada sector en pantalla única</small></div>
+            <div class="req-prio"><span class="tag tag-alta">Alta</span></div>
+          </div>
+          <div class="req-item" style="border-color:rgba(93,202,165,0.2);">
+            <div class="req-id">RF02</div>
+            <div class="req-text">Historial de lecturas con gráfico temporal<small>El usuario ve la evolución de cualquier variable en cualquier rango de fechas</small></div>
+            <div class="req-prio"><span class="tag tag-alta">Alta</span></div>
+          </div>
+          <div class="req-item" style="border-color:rgba(93,202,165,0.2);">
+            <div class="req-id">RF03</div>
+            <div class="req-text">Alertas automáticas por umbral<small>Email o push si temperatura, CO₂ o humedad superan los valores configurados</small></div>
+            <div class="req-prio"><span class="tag tag-alta">Alta</span></div>
+          </div>
+          <div class="req-item" style="border-color:rgba(167,139,250,0.2);background:rgba(167,139,250,0.03);">
+            <div class="req-id">RF04 <span style="font-size:.67rem;font-weight:700;background:rgba(167,139,250,0.2);color:var(--slide-purple);border-radius:3px;padding:1px 4px;">HW</span></div>
+            <div class="req-text">Alerta de equipo encendido sin ocupación + apagado remoto SmartThings<small>PIR detecta sin personas + consumo activo → alerta. Valeria apaga desde su celular Samsung vía SmartThings</small></div>
+            <div class="req-prio"><span class="tag tag-alta">Alta</span></div>
+          </div>
+        </div>
+        <div class="req-list">
+          <div class="req-item" style="border-color:rgba(167,139,250,0.2);background:rgba(167,139,250,0.03);">
+            <div class="req-id">RF05 <span style="font-size:.67rem;font-weight:700;background:rgba(167,139,250,0.2);color:var(--slide-purple);border-radius:3px;padding:1px 4px;">HW</span></div>
+            <div class="req-text">Reporte mensual de consumo eléctrico por sector<small>Basado en SCT-013 · "La factura subió mucho"</small></div>
+            <div class="req-prio"><span class="tag tag-media">Media</span></div>
+          </div>
+          <div class="req-item" style="border-color:rgba(93,202,165,0.2);">
+            <div class="req-id">RF06</div>
+            <div class="req-text">Dos perfiles de usuario: administradora y visor<small>Valeria: acceso total. Empleados: solo visualización, sin modificar umbrales</small></div>
+            <div class="req-prio"><span class="tag tag-alta">Alta</span></div>
+          </div>
+          <div class="req-item" style="border-color:rgba(93,202,165,0.2);">
+            <div class="req-id">RF07</div>
+            <div class="req-text">Configuración de umbrales desde el dashboard<small>"Solo yo debería poder cambiar los umbrales" — solo perfil admin</small></div>
+            <div class="req-prio"><span class="tag tag-media">Media</span></div>
+          </div>
+          <div class="req-item" style="border-color:rgba(93,202,165,0.2);">
+            <div class="req-id">RF08</div>
+            <div class="req-text">Vista resumen para celular (acceso fuera del estudio)<small>Valeria usa el celular cuando está fuera del estudio. Diseño responsive obligatorio</small></div>
+            <div class="req-prio"><span class="tag tag-media">Media</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       SLIDE 6 — RNF, RHW Y ALCANCE
+  ══════════════════════════════════════════════════ -->
+  <div class="slide slide-content" data-slide="5">
+    <div class="slide-header">
+      <div>
+        <div class="slide-section-label">E03 — Alcance y restricciones</div>
+        <div class="slide-h1">RNF, RHW y alcance del proyecto</div>
+      </div>
+      <div class="slide-num-badge">05 / 12</div>
+    </div>
+    <div class="slide-body">
+      <div class="cols-12" style="flex:1;align-items:start;">
+
+        <div style="display:flex;flex-direction:column;gap:.75rem;">
+          <div class="card-label" style="font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--slide-sub);">RNF y RHW — <em style="font-style:normal;color:#93c5fd;">cómo lo hace</em></div>
+          <div class="req-list">
+            <div class="req-item">
+              <div class="req-id blue">RNF01</div>
+              <div class="req-text">El nodo reconecta automáticamente al perder WiFi<small>Sin reiniciarse, sin perder lecturas. Reintento cada 30 segundos</small></div>
+              <div class="req-prio"><span class="tag tag-rnf">firmware</span></div>
+            </div>
+            <div class="req-item">
+              <div class="req-id blue">RNF02</div>
+              <div class="req-text">Latencia &lt;5 seg entre lectura y visualización<small>Las alertas en tiempo real no tienen sentido con demoras de minutos</small></div>
+              <div class="req-prio"><span class="tag tag-rnf">rendimiento</span></div>
+            </div>
+            <div class="req-item">
+              <div class="req-id blue">RNF03</div>
+              <div class="req-text">Dashboard accesible desde PC y celular sin instalar app<small>Bloque B: "PC + celular" — diseño responsive obligatorio</small></div>
+              <div class="req-prio"><span class="tag tag-rnf">usabilidad</span></div>
+            </div>
+            <div class="req-item">
+              <div class="req-id blue">RNF04</div>
+              <div class="req-text">Interfaz en lenguaje natural, sin jerga técnica<small>Ej: "Temperatura OK", "CO₂ elevado — ventile la sala". Comodidad tech. 3/5</small></div>
+              <div class="req-prio"><span class="tag tag-rnf">HCI</span></div>
+            </div>
+          </div>
+          <div class="req-list" style="margin-top:.2rem;">
+            <div class="req-item" style="border-color:rgba(167,139,250,0.2);background:rgba(167,139,250,0.02);">
+              <div class="req-id purple">RHW01</div>
+              <div class="req-text">Nodo compacto y montable en pared (máx. 10×8×4 cm)<small>El estudio es de atención a clientes. El aspecto importa</small></div>
+              <div class="req-prio"><span class="tag tag-rhw">form factor</span></div>
+            </div>
+            <div class="req-item" style="border-color:rgba(167,139,250,0.2);background:rgba(167,139,250,0.02);">
+              <div class="req-id purple">RHW03</div>
+              <div class="req-text">Sensor de temperatura alejado ≥50 cm de fuentes de calor<small>Hay impresoras láser en recepción y sala de reuniones</small></div>
+              <div class="req-prio"><span class="tag tag-rhw">instalación</span></div>
+            </div>
+            <div class="req-item" style="border-color:rgba(167,139,250,0.2);background:rgba(167,139,250,0.02);">
+              <div class="req-id purple">RHW06</div>
+              <div class="req-text">Repetidor WiFi instalado antes del despliegue de nodos<small>La red actual solo cubre la oficina central. Prerequisito obligatorio</small></div>
+              <div class="req-prio"><span class="tag tag-alta">Alta</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:.75rem;">
+          <div class="card-label" style="font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--slide-sub);">Alcance — <em style="font-style:normal;color:#93c5fd;">¿qué hacemos y qué NO?</em></div>
+          <div class="scope-grid">
+            <div>
+              <div class="scope-col-title yes">✓ El sistema HARÁ</div>
+              <div class="scope-item"><span class="scope-dot yes">●</span>Monitoreo ambiental en tiempo real (4 sectores)</div>
+              <div class="scope-item"><span class="scope-dot yes">●</span>Alertas automáticas por umbrales configurables</div>
+              <div class="scope-item"><span class="scope-dot yes">●</span>Reporte mensual de consumo eléctrico</div>
+              <div class="scope-item"><span class="scope-dot yes">●</span>Alerta de equipo encendido sin ocupación</div>
+              <div class="scope-item"><span class="scope-dot yes">●</span>Control remoto de splits vía SmartThings</div>
+              <div class="scope-item"><span class="scope-dot yes">●</span>Perfiles: administradora y visor</div>
+              <div class="scope-item"><span class="scope-dot yes">●</span>Historial de lecturas + gráficos</div>
+            </div>
+            <div>
+              <div class="scope-col-title no">✗ El sistema NO HARÁ</div>
+              <div class="scope-item"><span class="scope-dot no">●</span>Apagado automático de splits sin intervención humana (v1)</div>
+              <div class="scope-item"><span class="scope-dot no">●</span>Control de ventilación motorizada</div>
+              <div class="scope-item"><span class="scope-dot no">●</span>App nativa iOS/Android (usa web responsive)</div>
+              <div class="scope-item"><span class="scope-dot no">●</span>Integración con software contable</div>
+              <div class="scope-item"><span class="scope-dot no">●</span>Medición con precisión de laboratorio (MQ-135 es orientativo)</div>
+              <div class="scope-item"><span class="scope-dot no">●</span>Mantenimiento del hardware post-entrega</div>
+            </div>
+          </div>
+          <div class="note" style="font-size:.7rem;">Definir las limitaciones no es admitir debilidad: es un contrato claro de alcance que protege al equipo y genera confianza en el usuario.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       SLIDE 7 — OKRs
+  ══════════════════════════════════════════════════ -->
+  <div class="slide slide-content" data-slide="6">
+    <div class="slide-header">
+      <div>
+        <div class="slide-section-label">E01–E03 — Metas medibles</div>
+        <div class="slide-h1">OKRs del proyecto</div>
+      </div>
+      <div class="slide-num-badge">06 / 12</div>
+    </div>
+    <div class="slide-body">
+      <div class="section-intro">En proyectos con hardware los OKRs incluyen métricas del mundo físico: ¿cuánto bajaron las quejas? ¿cuánto bajó la factura de luz? Sin número, no es un KR.</div>
+      <div class="cols-2" style="flex:1;align-items:start;gap:1rem;">
+        <div>
+          <div class="okr-group">
+            <div class="okr-obj">
+              <div class="okr-obj-label">Objetivo 1 — Impacto en el usuario</div>
+              <div class="okr-obj-text">Eliminar la detección tardía de problemas ambientales en el estudio</div>
+            </div>
+            <div class="okr-krs">
+              <div class="okr-kr"><div class="okr-kr-label">KR 1</div><div class="okr-kr-text">Reducir quejas de temperatura de 3–4/semana a máximo 1 en el primer mes de uso</div></div>
+              <div class="okr-kr"><div class="okr-kr-label">KR 2</div><div class="okr-kr-text">Tiempo de detección de problema ambiental: de "horas" a menos de 5 minutos (alerta automática)</div></div>
+              <div class="okr-kr"><div class="okr-kr-label">KR 3</div><div class="okr-kr-text">El 100% de los eventos de CO₂ elevado en la oficina del fondo detectados antes de que algún empleado lo reporte</div></div>
+            </div>
+          </div>
+          <div class="okr-group">
+            <div class="okr-obj">
+              <div class="okr-obj-label">Objetivo 2 — Hardware en producción</div>
+              <div class="okr-obj-text">Los 4 nodos, repetidor y enchufes SmartThings instalados y funcionando</div>
+            </div>
+            <div class="okr-krs">
+              <div class="okr-kr"><div class="okr-kr-label">KR 1</div><div class="okr-kr-text">Los 4 nodos operan sin interrupciones por más de 72 horas consecutivas en prueba de campo</div></div>
+              <div class="okr-kr"><div class="okr-kr-label">KR 2</div><div class="okr-kr-text">Pérdida de lecturas por problemas de red &lt;2% del total de muestras esperadas</div></div>
+              <div class="okr-kr"><div class="okr-kr-label">KR 3</div><div class="okr-kr-text">Valeria puede apagar un split desde su celular Samsung en menos de 10 segundos</div></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="okr-group">
+            <div class="okr-obj">
+              <div class="okr-obj-label">Objetivo 3 — Impacto económico</div>
+              <div class="okr-obj-text">Demostrar reducción de consumo eléctrico con datos del sistema</div>
+            </div>
+            <div class="okr-krs">
+              <div class="okr-kr"><div class="okr-kr-label">KR 1</div><div class="okr-kr-text">El reporte de consumo mensual muestra datos por sector en el primer mes de operación</div></div>
+              <div class="okr-kr"><div class="okr-kr-label">KR 2</div><div class="okr-kr-text">Se detectan ≥3 eventos de "equipo encendido sin ocupación" que Valeria hubiera pasado por alto</div></div>
+              <div class="okr-kr"><div class="okr-kr-label">KR 3</div><div class="okr-kr-text">Valeria puede comparar el consumo del mes con sistema vs el mes anterior y cuantificar el ahorro</div></div>
+            </div>
+          </div>
+          <div class="okr-group">
+            <div class="okr-obj">
+              <div class="okr-obj-label">Objetivo 4 — Validación y escalabilidad</div>
+              <div class="okr-obj-text">Demostrar que el sistema es replicable en otros espacios similares</div>
+            </div>
+            <div class="okr-krs">
+              <div class="okr-kr"><div class="okr-kr-label">KR 1</div><div class="okr-kr-text">Agregar un 5to nodo en un ambiente nuevo tarda menos de 30 minutos sin modificar el software</div></div>
+              <div class="okr-kr"><div class="okr-kr-label">KR 2</div><div class="okr-kr-text">Costo de materiales por nodo adicional menor a $25.000</div></div>
+              <div class="okr-kr"><div class="okr-kr-label">KR 3</div><div class="okr-kr-text">Al menos 2 contactos de Valeria en el rubro expresan interés después de ver la demo</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       SLIDE 8 — PERFILES DE USUARIO
+  ══════════════════════════════════════════════════ -->
+  <div class="slide slide-content" data-slide="7">
+    <div class="slide-header">
+      <div>
+        <div class="slide-section-label">E01 — Datos medibles</div>
+        <div class="slide-h1">Perfiles de usuario</div>
+      </div>
+      <div class="slide-num-badge">07 / 12</div>
+    </div>
+    <div class="slide-body">
+      <div class="section-intro">En proyectos de hardware existe un tercer perfil que los proyectos de software no tienen: el técnico instalador. Sus necesidades condicionan cómo se diseña la configuración del nodo.</div>
+      <div style="display:flex;flex-direction:column;gap:.75rem;flex:1;">
+        <div class="profile-grid">
+          <div class="profile-card">
+            <div class="profile-header admin">
+              <div class="profile-avatar">VG</div>
+              <div>
+                <div class="profile-name">Valeria Gómez</div>
+                <div class="profile-role">Perfil: Administradora · acceso total</div>
+              </div>
+            </div>
+            <div class="profile-body">
+              <div class="profile-row"><div class="profile-k">Dispositivo</div><div class="profile-v warn">PC (trabajo) + celular Samsung</div></div>
+              <div class="profile-row"><div class="profile-k">SmartThings</div><div class="profile-v ok">Instalada — control remoto de splits</div></div>
+              <div class="profile-row"><div class="profile-k">Nivel tecnológico</div><div class="profile-v warn">3/5 — lenguaje natural, sin jerga</div></div>
+              <div class="profile-row"><div class="profile-k">Acciones</div><div class="profile-v">Todo: umbrales, reportes, usuarios</div></div>
+              <div class="profile-row"><div class="profile-k">Restricción HCI</div><div class="profile-v warn">Sin jerga técnica — estado en lenguaje natural</div></div>
+            </div>
+          </div>
+          <div class="profile-card">
+            <div class="profile-header empleado">
+              <div class="profile-avatar">EE</div>
+              <div>
+                <div class="profile-name">Empleados del estudio</div>
+                <div class="profile-role">Perfil: Visor · solo visualización · 8 personas</div>
+              </div>
+            </div>
+            <div class="profile-body">
+              <div class="profile-row"><div class="profile-k">Dispositivo</div><div class="profile-v">PC de cada puesto</div></div>
+              <div class="profile-row"><div class="profile-k">Uso esperado</div><div class="profile-v">Cuando se sienten incómodos</div></div>
+              <div class="profile-row"><div class="profile-k">Acciones</div><div class="profile-v">Solo ver datos actuales e historial</div></div>
+              <div class="profile-row"><div class="profile-k">Nivel tecnológico</div><div class="profile-v pending">Variable — a relevar (KR de Obj. 1)</div></div>
+              <div class="profile-row"><div class="profile-k">Perfil</div><div class="profile-v warn">Pendiente: entrevistar ≥2 empleados</div></div>
+            </div>
+          </div>
+        </div>
+        <!-- Técnico instalador -->
+        <div class="profile-card" style="border-color:rgba(167,139,250,0.2);">
+          <div class="profile-header tecnico">
+            <div class="profile-avatar tecnico">TI</div>
+            <div>
+              <div class="profile-name">Técnico instalador</div>
+              <div class="profile-role">Perfil exclusivo de proyectos con hardware · integrante del equipo de 7mo</div>
+            </div>
+          </div>
+          <div class="profile-body" style="display:grid;grid-template-columns:1fr 1fr;gap:0;">
+            <div class="profile-row"><div class="profile-k">Quién es</div><div class="profile-v">1–2 integrantes del equipo de proyecto</div></div>
+            <div class="profile-row"><div class="profile-k">Cuándo actúa</div><div class="profile-v">En la instalación + falla de nodo</div></div>
+            <div class="profile-row"><div class="profile-k">Herramienta</div><div class="profile-v">Portal web de setup (red local)</div></div>
+            <div class="profile-row"><div class="profile-k">Restricción clave</div><div class="profile-v warn">Instalación de nodo nuevo ≤20 minutos</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       SLIDE 9 — EL EQUIPO
+  ══════════════════════════════════════════════════ -->
+  <div class="slide slide-content" data-slide="8">
+    <div class="slide-header">
+      <div>
+        <div class="slide-section-label">Gestión — Roles del equipo</div>
+        <div class="slide-h1">El equipo de trabajo</div>
+      </div>
+      <div class="slide-num-badge">08 / 12</div>
+    </div>
+    <div class="slide-body">
+      <div style="display:flex;flex-direction:column;gap:1.2rem;flex:1;">
+
+        <div>
+          <div class="card-label" style="font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--slide-sub);margin-bottom:.75rem;">Equipo de desarrollo — 7mo Informática</div>
+          <div class="team-grid" style="grid-template-columns:repeat(5,1fr)!important;">
+            <div class="team-card">
+              <div class="team-avatar">AA</div>
+              <div class="team-name">Apellido, Nombre</div>
+              <div class="team-role">Project Manager</div>
+              <div class="team-role" style="color:#93c5fd;font-size:.71rem;margin-top:-2px;">+ Dev Frontend</div>
+              <div class="team-specialty">Gestión, GANTT, control de cambios, OKRs · contribuye al dashboard React</div>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar" style="background:linear-gradient(135deg,#1a3a5c,#3b82f6);">BB</div>
+              <div class="team-name">Apellido, Nombre</div>
+              <div class="team-role blue">Dev Frontend</div>
+              <div class="team-specialty">Dashboard React, HCI, mockups Figma, responsive PC + mobile</div>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar" style="background:linear-gradient(135deg,#1a3a5c,#3b82f6);">CC</div>
+              <div class="team-name">Apellido, Nombre</div>
+              <div class="team-role blue">Dev Backend</div>
+              <div class="team-specialty">Node.js + Express, MQTT, API REST, integración SmartThings, JWT</div>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar" style="background:linear-gradient(135deg,#6d28d9,#8b5cf6);">DD</div>
+              <div class="team-name">Apellido, Nombre</div>
+              <div class="team-role warm">Esp. DB</div>
+              <div class="team-specialty">PostgreSQL, modelo de datos, series temporales, optimización de consultas</div>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar" style="background:linear-gradient(135deg,#4c1d95,#7c3aed);">EE</div>
+              <div class="team-name">Apellido, Nombre</div>
+              <div class="team-role" style="color:#c4b5fd;">Esp. Hardware</div>
+              <div class="team-specialty">Firmware ESP32, circuito de sensores, diseño 3D carcasa, instalación física</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card-label" style="font-family:'DM Sans',sans-serif;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--slide-sub);margin-bottom:.75rem;">Partners — Otras modalidades</div>
+          <div class="team-grid" style="grid-template-columns:repeat(4,1fr);">
+            <div class="team-card">
+              <div class="team-avatar partner">FF</div>
+              <div class="team-name">Apellido, Nombre</div>
+              <div class="team-role" style="color:#f87171;">Modalidad ADO</div>
+              <div class="team-specialty">Documentación técnica, presupuesto, análisis económico, oferta al cliente</div>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar partner">HH</div>
+              <div class="team-name">Apellido, Nombre</div>
+              <div class="team-role" style="color:#f87171;">Modalidad ADO</div>
+              <div class="team-specialty">Contratos, carpeta del proyecto, estimación de costos de hardware</div>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar partner">GG</div>
+              <div class="team-name">Apellido, Nombre</div>
+              <div class="team-role" style="color:#f87171;">Modalidad Electro</div>
+              <div class="team-specialty">Diseño del circuito, esquema eléctrico, integración SCT-013 y enchufes</div>
+            </div>
+            <div class="team-card">
+              <div class="team-avatar partner">II</div>
+              <div class="team-name">Apellido, Nombre</div>
+              <div class="team-role" style="color:#c4b5fd;">Modalidad Multi</div>
+              <div class="team-specialty">Identidad visual SensorOffice, tríptico, caja del producto, landing page</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       SLIDE 10 — PRESUPUESTO Y TECH STACK
+  ══════════════════════════════════════════════════ -->
+  <div class="slide slide-content" data-slide="9">
+    <div class="slide-header">
+      <div>
+        <div class="slide-section-label">E02 — Factibilidad técnica y económica</div>
+        <div class="slide-h1">Presupuesto estimado y tech stack</div>
+      </div>
+      <div class="slide-num-badge">09 / 12</div>
+    </div>
+    <div class="slide-body">
+      <div class="cols-2" style="flex:1;align-items:start;">
+
+        <!-- Tech Stack -->
+        <div style="display:flex;flex-direction:column;gap:1rem;">
+          <div class="card">
+            <div class="tech-section-title">Firmware (Hardware)</div>
+            <div class="tech-list">
+              <div class="tech-item"><div class="tech-name">C++ / Arduino Framework (ESP32)</div><div class="tech-cost free">Free / OSS</div></div>
+              <div class="tech-item"><div class="tech-name">Librerías: DHT, PubSubClient, WiFiManager</div><div class="tech-cost free">Free / OSS</div></div>
+              <div class="tech-item"><div class="tech-name">Broker MQTT: Mosquitto (Eclipse)</div><div class="tech-cost free">Free / OSS</div></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tech-section-title">Frontend (Dashboard)</div>
+            <div class="tech-list">
+              <div class="tech-item"><div class="tech-name">React + Vite</div><div class="tech-cost free">Free / OSS</div></div>
+              <div class="tech-item"><div class="tech-name">Recharts / Chart.js (gráficos)</div><div class="tech-cost free">Free / OSS</div></div>
+              <div class="tech-item"><div class="tech-name">Tailwind CSS — responsive</div><div class="tech-cost free">Free / OSS</div></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tech-section-title">Backend / Base de datos</div>
+            <div class="tech-list">
+              <div class="tech-item"><div class="tech-name">Node.js + Express</div><div class="tech-cost free">Free / OSS</div></div>
+              <div class="tech-item"><div class="tech-name">PostgreSQL (+ TimescaleDB opcional)</div><div class="tech-cost free">Free / OSS</div></div>
+              <div class="tech-item"><div class="tech-name">JWT · SmartThings REST API</div><div class="tech-cost free">Free</div></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="tech-section-title">Hosting e infraestructura</div>
+            <div class="tech-list">
+              <div class="tech-item"><div class="tech-name">Servidor ILM — pruebas e institución</div><div class="tech-cost free">$0</div></div>
+              <div class="tech-item" style="border:1px solid rgba(93,202,165,0.2);border-radius:5px;padding:.35rem .5rem;background:rgba(93,202,165,0.04);">
+                <div><div class="tech-name" style="color:#6ee7b7;">Hosting externo — Railway / Render <span style="font-size:.74rem;font-weight:700;background:rgba(93,202,165,0.2);color:var(--slide-accent);border-radius:3px;padding:1px 5px;margin-left:4px;">obligatorio</span></div><div style="font-size:.74rem;color:var(--slide-sub);">Para acceso remoto de Valeria desde su celular</div></div>
+                <div class="tech-cost paid">~$0–$5/mes</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Budget -->
+        <div style="display:flex;flex-direction:column;gap:1rem;">
+          <div class="card card-accent">
+            <div class="card-label">Presupuesto — esfuerzo en horas hombre</div>
+            <div class="tech-list" style="margin-top:.5rem;">
+              <div class="tech-item">
+                <div><div class="tech-name">Project Manager</div><div style="font-size:.74rem;color:var(--slide-sub);">120 hs × $2.500/h estimado</div></div>
+                <div class="tech-cost paid">$300.000</div>
+              </div>
+              <div class="tech-item">
+                <div><div class="tech-name">Dev Frontend + Backend</div><div style="font-size:.74rem;color:var(--slide-sub);">240 hs × $3.000/h estimado</div></div>
+                <div class="tech-cost paid">$720.000</div>
+              </div>
+              <div class="tech-item">
+                <div><div class="tech-name">Especialista DB</div><div style="font-size:.74rem;color:var(--slide-sub);">80 hs × $3.000/h estimado</div></div>
+                <div class="tech-cost paid">$240.000</div>
+              </div>
+              <div class="tech-item">
+                <div><div class="tech-name">Especialista Hardware (firmware + circuito)</div><div style="font-size:.74rem;color:var(--slide-sub);">100 hs × $3.000/h estimado</div></div>
+                <div class="tech-cost paid">$300.000</div>
+              </div>
+              <div class="tech-item" style="border-top:1px solid rgba(93,202,165,0.2);padding-top:.4rem;margin-top:.2rem;">
+                <div class="tech-name" style="font-weight:500;color:#fff;font-size:.95rem;">Total estimado de desarrollo</div>
+                <div class="tech-cost" style="color:#fff;font-size:1rem;">$1.560.000</div>
+              </div>
+            </div>
+            <!-- GANTT reference -->
+            <div style="margin-top:.75rem;padding:.5rem .7rem;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:5px;display:flex;align-items:flex-start;gap:.5rem;">
+              <span style="font-size:.8rem;flex-shrink:0;">📊</span>
+              <div style="font-family:'DM Sans',sans-serif;font-size:.78rem;color:var(--slide-sub);line-height:1.5;">
+                <strong style="color:var(--slide-text);">Verificar valores en el GANTT de la materia</strong>, hoja
+                <strong style="color:var(--slide-text);">"GANTT_Data_Referencias"</strong> —
+                <a href="https://docs.google.com/spreadsheets/d/10dP-s-iefJMvuQ2EOiV5pMtVPZR1gEK9YoTmoiA9KdU/edit?usp=sharing"
+                   target="_blank"
+                   style="color:var(--slide-accent);text-decoration:underline;text-underline-offset:2px;word-break:break-all;">
+                  docs.google.com/spreadsheets/d/10dP-s-iefJMvuQ2EOiV5pMtVPZR1gEK9YoTmoiA9KdU
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card card-purple">
+            <div class="card-label purple">Hardware por nodo (materiales)</div>
+            <div class="tech-list">
+              <div class="tech-item"><div class="tech-name">ESP32 DevKit v1</div><div class="tech-cost paid">~$8.000</div></div>
+              <div class="tech-item"><div class="tech-name">DHT22 + MQ-135 + BH1750 + PIR</div><div class="tech-cost paid">~$9.000</div></div>
+              <div class="tech-item"><div class="tech-name">SCT-013 + carcasa 3D + USB-C</div><div class="tech-cost paid">~$5.500</div></div>
+              <div class="tech-item"><div class="tech-name">Repetidor WiFi (único)</div><div class="tech-cost paid">~$25.000</div></div>
+              <div class="tech-item"><div class="tech-name">Enchufe inteligente SmartThings × split</div><div class="tech-cost paid">~$18.000 c/u</div></div>
+            </div>
+          </div>
+          <div class="card card-warm">
+            <div class="card-label warm">Modelo de negocio (referencia)</div>
+            <div class="card-body">
+              <p>Valeria declaró disposición de pago <strong style="color:#fff;">si se justifica el ahorro eléctrico</strong>.</p>
+              <p style="margin-top:.3rem;">Con 50 clientes en rubro profesional (estudios, consultorios): modelo de suscripción mensual viable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       SLIDE 11 — CRONOGRAMA GANTT
+  ══════════════════════════════════════════════════ -->
+  <div class="slide slide-content" data-slide="10">
+    <div class="slide-header">
+      <div>
+        <div class="slide-section-label">Gestión — Cronograma</div>
+        <div class="slide-h1">Cronograma tentativo del proyecto</div>
+      </div>
+      <div class="slide-num-badge">10 / 12</div>
+    </div>
+    <div class="slide-body">
+      <div class="gantt-grid">
+        <div class="gantt-header">
+          <div class="gantt-header-cell" style="text-align:left;padding-left:.65rem;">Fase</div>
+          <div class="gantt-header-cell">Abr</div>
+          <div class="gantt-header-cell">May</div>
+          <div class="gantt-header-cell">Jun</div>
+          <div class="gantt-header-cell">Jul</div>
+          <div class="gantt-header-cell">Ago</div>
+          <div class="gantt-header-cell">Sep</div>
+          <div class="gantt-header-cell">Oct</div>
+          <div class="gantt-header-cell">Nov ⚡</div>
+        </div>
+
+        <!-- E01 — Validación del problema -->
+        <div class="gantt-row">
+          <div class="gantt-label"><strong>E01</strong>Validación del problema</div>
+          <div class="gantt-cell active"></div>
+          <div class="gantt-cell active" style="opacity:.4;"></div>
+          <div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label" style="font-size:.67rem;color:var(--slide-sub);padding-left:.75rem;opacity:.7;">Entrevistas, visita técnica, RF / RHW / OKRs, documento</div>
+          <div class="gantt-cell active sub"></div>
+          <div class="gantt-cell active sub" style="opacity:.4;"></div>
+          <div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div>
+        </div>
+
+        <!-- E02 — Factibilidad -->
+        <div class="gantt-row">
+          <div class="gantt-label"><strong>E02</strong>Factibilidad</div>
+          <div class="gantt-cell"></div>
+          <div class="gantt-cell active"></div>
+          <div class="gantt-cell active" style="opacity:.4;"></div>
+          <div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label" style="font-size:.67rem;color:var(--slide-sub);padding-left:.75rem;opacity:.7;">Protoboard, prueba SmartThings, repetidor WiFi confirmado</div>
+          <div class="gantt-cell"></div>
+          <div class="gantt-cell active sub"></div>
+          <div class="gantt-cell active sub" style="opacity:.4;"></div>
+          <div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div>
+        </div>
+
+        <!-- E03 — Diseño del sistema -->
+        <div class="gantt-row">
+          <div class="gantt-label"><strong>E03</strong>Diseño del sistema</div>
+          <div class="gantt-cell"></div><div class="gantt-cell"></div>
+          <div class="gantt-cell active blue"></div>
+          <div class="gantt-cell active blue" style="opacity:.4;"></div>
+          <div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label" style="font-size:.67rem;color:var(--slide-sub);padding-left:.75rem;opacity:.7;">Mockup Figma + carcasa 3D + plano de nodos + validación con Valeria</div>
+          <div class="gantt-cell"></div><div class="gantt-cell"></div>
+          <div class="gantt-cell active sub blue"></div>
+          <div class="gantt-cell active sub blue" style="opacity:.4;"></div>
+          <div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div>
+        </div>
+
+        <!-- E04 — Prototipado -->
+        <div class="gantt-row">
+          <div class="gantt-label"><strong>E04</strong>Prototipado</div>
+          <div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div>
+          <div class="gantt-cell active blue"></div>
+          <div class="gantt-cell active blue" style="opacity:.4;"></div>
+          <div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label" style="font-size:.67rem;color:var(--slide-sub);padding-left:.75rem;opacity:.7;">Firmware ESP32, circuito soldado, integración MQTT, dashboard básico</div>
+          <div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div>
+          <div class="gantt-cell active sub blue"></div>
+          <div class="gantt-cell active sub blue" style="opacity:.4;"></div>
+          <div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div>
+        </div>
+
+        <!-- E05 — Desarrollo -->
+        <div class="gantt-row">
+          <div class="gantt-label"><strong>E05</strong>Desarrollo + instalación</div>
+          <div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div>
+          <div class="gantt-cell active warm"></div>
+          <div class="gantt-cell active warm"></div>
+          <div class="gantt-cell active warm" style="opacity:.4;"></div>
+          <div class="gantt-cell"></div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label" style="font-size:.67rem;color:var(--slide-sub);padding-left:.75rem;opacity:.7;">Backend completo, dashboard final, instalación en campo, documentación</div>
+          <div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div>
+          <div class="gantt-cell active sub warm"></div>
+          <div class="gantt-cell active sub warm"></div>
+          <div class="gantt-cell active sub warm" style="opacity:.4;"></div>
+          <div class="gantt-cell"></div>
+        </div>
+
+        <!-- E06 — Presentación -->
+        <div class="gantt-row">
+          <div class="gantt-label"><strong>E06</strong>Presentación final</div>
+          <div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div>
+          <div class="gantt-cell active purple"></div>
+          <div class="gantt-cell expo"></div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label" style="font-size:.67rem;color:var(--slide-sub);padding-left:.75rem;opacity:.7;">Preparación de la presentación, ensayo, entrega del documento final</div>
+          <div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div><div class="gantt-cell"></div>
+          <div class="gantt-cell active sub purple"></div>
+          <div class="gantt-cell expo sub"></div>
+        </div>
+
+        <!-- Legend -->
+        <div style="display:flex;gap:1.2rem;margin-top:.5rem;flex-wrap:wrap;grid-column:1/-1;padding:.5rem .65rem;">
+          <div style="display:flex;align-items:center;gap:.4rem;font-family:'DM Sans',sans-serif;font-size:.71rem;color:var(--slide-sub);">
+            <div style="width:14px;height:8px;border-radius:2px;background:linear-gradient(90deg,var(--slide-accent),rgba(93,202,165,0.5));"></div>E01 Validación · E02 Factibilidad
+          </div>
+          <div style="display:flex;align-items:center;gap:.4rem;font-family:'DM Sans',sans-serif;font-size:.71rem;color:var(--slide-sub);">
+            <div style="width:14px;height:8px;border-radius:2px;background:linear-gradient(90deg,var(--slide-accent2),rgba(59,130,246,0.5));"></div>E03 Diseño · E04 Prototipado
+          </div>
+          <div style="display:flex;align-items:center;gap:.4rem;font-family:'DM Sans',sans-serif;font-size:.71rem;color:var(--slide-sub);">
+            <div style="width:14px;height:8px;border-radius:2px;background:linear-gradient(90deg,var(--slide-warm),rgba(251,146,60,0.5));"></div>E05 Desarrollo + instalación
+          </div>
+          <div style="display:flex;align-items:center;gap:.4rem;font-family:'DM Sans',sans-serif;font-size:.71rem;color:var(--slide-sub);">
+            <div style="width:14px;height:8px;border-radius:2px;background:linear-gradient(90deg,#8b5cf6,rgba(139,92,246,0.5));"></div>E06 Presentación final
+          </div>
+          <div style="display:flex;align-items:center;gap:.4rem;font-family:'DM Sans',sans-serif;font-size:.71rem;color:var(--slide-sub);">
+            <div style="width:14px;height:8px;border-radius:2px;background:linear-gradient(90deg,#f59e0b,#fbbf24);"></div>⚡ EXPO Nov.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       SLIDE 12 — PRÓXIMOS PASOS
+  ══════════════════════════════════════════════════ -->
+  <div class="slide slide-content" data-slide="11">
+    <div class="slide-header">
+      <div>
+        <div class="slide-section-label">E01→E03 — Antes de programar o soldar</div>
+        <div class="slide-h1">Próximos pasos</div>
+      </div>
+      <div class="slide-num-badge">11 / 12</div>
+    </div>
+    <div class="slide-body">
+      <div class="cols-12" style="flex:1;align-items:start;">
+        <div style="display:flex;flex-direction:column;gap:.7rem;">
+          <div class="card card-accent">
+            <div class="card-label">Pendientes inmediatos</div>
+            <div style="display:flex;flex-direction:column;gap:.5rem;margin-top:.4rem;">
+
+              <div style="display:flex;gap:.75rem;align-items:flex-start;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+                <div style="width:24px;height:24px;border-radius:50%;background:var(--slide-accent);display:flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.7rem;color:#fff;flex-shrink:0;">1</div>
+                <div>
+                  <div style="font-family:'DM Sans',sans-serif;font-weight:600;font-size:.8rem;color:#fff;">Entrevistar a al menos 2 empleados del estudio</div>
+                  <div style="font-size:.78rem;color:var(--slide-sub);margin-top:2px;">Completar el perfil de usuario visor. Sin este paso, la interfaz de empleados no puede diseñarse. Es KR de Objetivo 1.</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:.75rem;align-items:flex-start;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+                <div style="width:24px;height:24px;border-radius:50%;background:var(--slide-accent);display:flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.7rem;color:#fff;flex-shrink:0;">2</div>
+                <div>
+                  <div style="font-family:'DM Sans',sans-serif;font-weight:600;font-size:.8rem;color:#fff;">Visita técnica al estudio — relevamiento de planta</div>
+                  <div style="font-size:.78rem;color:var(--slide-sub);margin-top:2px;">Fotografiar cada ambiente, medir cobertura WiFi, marcar en plano dónde van los nodos y el repetidor. Obligatorio antes de definir el hardware final.</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:.75rem;align-items:flex-start;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+                <div style="width:24px;height:24px;border-radius:50%;background:var(--slide-accent2);display:flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.7rem;color:#fff;flex-shrink:0;">3</div>
+                <div>
+                  <div style="font-family:'DM Sans',sans-serif;font-weight:600;font-size:.8rem;color:#fff;">Prototipo en protoboard + prueba enchufe SmartThings</div>
+                  <div style="font-size:.78rem;color:var(--slide-sub);margin-top:2px;">Probar circuito completo (ESP32 + sensores + MQTT) y verificar integración con SmartThings en celular Samsung. Confirmar lecturas antes del diseño 3D.</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:.75rem;align-items:flex-start;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+                <div style="width:24px;height:24px;border-radius:50%;background:var(--slide-accent2);display:flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.7rem;color:#fff;flex-shrink:0;">4</div>
+                <div>
+                  <div style="font-family:'DM Sans',sans-serif;font-weight:600;font-size:.8rem;color:#fff;">Mockup del dashboard en Figma</div>
+                  <div style="font-size:.78rem;color:var(--slide-sub);margin-top:2px;">Responsive: desktop 1440px + mobile 390px. Vista resumen + detalle por ambiente + alertas + acceso rápido a SmartThings. Lenguaje natural obligatorio.</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:.75rem;align-items:flex-start;padding:.4rem 0;border-bottom:1px solid rgba(255,255,255,0.05);">
+                <div style="width:24px;height:24px;border-radius:50%;background:var(--slide-accent2);display:flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.7rem;color:#fff;flex-shrink:0;">5</div>
+                <div>
+                  <div style="font-family:'DM Sans',sans-serif;font-weight:600;font-size:.8rem;color:#fff;">Diseño 3D de la carcasa en Tinkercad o Fusion 360</div>
+                  <div style="font-size:.78rem;color:var(--slide-sub);margin-top:2px;">Cumpliendo RHW01 (tamaño ≤10×8×4 cm), RHW04 (ventilación MQ-135) y RHW03 (alejado de fuentes de calor). Incluir en sección 4.3.1 del documento.</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:.75rem;align-items:flex-start;padding:.4rem 0;">
+                <div style="width:24px;height:24px;border-radius:50%;background:var(--slide-accent2);display:flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.7rem;color:#fff;flex-shrink:0;">6</div>
+                <div>
+                  <div style="font-family:'DM Sans',sans-serif;font-weight:600;font-size:.8rem;color:#fff;">Volver con Valeria a validar el prototipo y el plano de nodos</div>
+                  <div style="font-size:.78rem;color:var(--slide-sub);margin-top:2px;"><strong style="color:var(--slide-warm);">Antes de escribir una sola línea de código o soldar un componente.</strong> Registrar el feedback como hito en el control de cambios.</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:.85rem;">
+          <div class="card card-purple">
+            <div class="card-label purple">HCI — Lo que sabemos de Valeria</div>
+            <div class="hci-list" style="margin-top:.5rem;">
+              <div class="hci-item">
+                <div class="hci-icon">🖥️</div>
+                <div class="hci-text"><strong>PC escritorio</strong> — dispositivo principal en el estudio</div>
+                <div class="hci-implication">1440px desktop-first</div>
+              </div>
+              <div class="hci-item">
+                <div class="hci-icon">📱</div>
+                <div class="hci-text"><strong>Celular Samsung Android</strong> — para uso remoto</div>
+                <div class="hci-implication">390px responsive</div>
+              </div>
+              <div class="hci-item">
+                <div class="hci-icon">🏠</div>
+                <div class="hci-text"><strong>SmartThings instalado</strong> — patrón de control ya conocido</div>
+                <div class="hci-implication">integración nativa</div>
+              </div>
+              <div class="hci-item">
+                <div class="hci-icon">💬</div>
+                <div class="hci-text"><strong>Comodidad tech. 3/5</strong> — interfaz sin jerga técnica</div>
+                <div class="hci-implication">lenguaje natural</div>
+              </div>
+              <div class="hci-item">
+                <div class="hci-icon">🎯</div>
+                <div class="hci-text"><strong>Gestora, no técnica</strong> — le interesa el resultado, no el dato crudo</div>
+                <div class="hci-implication">valores con contexto</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="note success">
+            ✓ <strong>Regla de oro:</strong> el prototipo de nodo y el mockup del dashboard tienen que estar validados por Valeria antes de la fase de programación y soldadura. El feedback se registra como hito en el control de cambios.
+          </div>
+
+          <div class="card" style="background:rgba(251,146,60,0.06);border-color:rgba(251,146,60,0.2);">
+            <div class="card-label warm">Documentación entregable</div>
+            <div class="card-body" style="display:grid;grid-template-columns:1fr 1fr;gap:.25rem;">
+              <div style="font-size:.78rem;color:var(--slide-sub);">📁 Carpeta de proyecto (4 secciones)</div>
+              <div style="font-size:.78rem;color:var(--slide-sub);">📊 GANTT actualizado</div>
+              <div style="font-size:.78rem;color:var(--slide-sub);">🐙 Repositorio GitHub</div>
+              <div style="font-size:.78rem;color:var(--slide-sub);">🎨 Mockup Figma + validación</div>
+              <div style="font-size:.78rem;color:var(--slide-sub);">🔌 Diseño 3D carcasa + esquema eléctrico</div>
+              <div style="font-size:.78rem;color:var(--slide-sub);">🗺️ Plano de nodos del estudio</div>
+              <div style="font-size:.78rem;color:var(--slide-sub);">📄 Manual de usuario + Quick Start</div>
+              <div style="font-size:.78rem;color:var(--slide-sub);">🌐 Landing page SensorOffice</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════════
+       SLIDE 13 — CARÁTULA FINAL
+  ══════════════════════════════════════════════════ -->
+  <div class="slide slide-cover" data-slide="12">
+    <div class="cover-glow"></div>
+    <div class="cover-glow2"></div>
+
+    <div class="cover-kicker">Instituto Leonardo Murialdo · 7mo Informática 2026</div>
+    <div class="cover-title">Primera<br>presentación<br>de <span class="hl">proyecto</span></div>
+    <div class="cover-divider"></div>
+    <div class="cover-meta">
+      <div class="cover-meta-row">
+        <div class="cover-dot"></div>
+        <span>Equipo <strong>N° —</strong></span>
+      </div>
+      <div class="cover-meta-row" style="flex-direction:column; align-items:flex-start; gap:.4rem; padding-left:15px;">
+        <div class="cover-team-table">
+          <div class="cover-member-num">01</div><div class="cover-member-name">Apellido, Nombre</div>
+          <div class="cover-member-num">02</div><div class="cover-member-name">Apellido, Nombre</div>
+          <div class="cover-member-num">03</div><div class="cover-member-name">Apellido, Nombre</div>
+          <div class="cover-member-num">04</div><div class="cover-member-name">Apellido, Nombre</div>
+          <div class="cover-member-num">05</div><div class="cover-member-name">Apellido, Nombre</div>
+        </div>
+      </div>
+      <div class="cover-meta-row" style="margin-top:.5rem;">
+        <div class="cover-dot"></div>
+        <span><strong>Mayo 2026</strong></span>
+      </div>
+    </div>
+
+    <div class="cover-bottom-bar"></div>
+    <div class="cover-institute">Instituto Leonardo Murialdo</div>
+  </div>
+
+</div><!-- /stage -->
+
+
+<!-- ── NAVIGATION FOOTER ── -->
+<div id="footer-wrap">
+  <div id="nav">
+    <button class="nav-btn" id="btn-prev" onclick="changeSlide(-1)">← Anterior</button>
+    <div class="nav-dots" id="dots"></div>
+    <div class="nav-progress" id="progress-text">1 / 13</div>
+    <button class="nav-btn" id="btn-next" onclick="changeSlide(1)">Siguiente →</button>
+  </div>
+  <div id="footer-teacher">
+    <span class="footer-teacher-label">Prof. Pedaci, Lourdes</span>
+    <a href="https://www.linkedin.com/in/lourdes-pedaci/" target="_blank" class="footer-li-btn" title="LinkedIn">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+      </svg>
+      LinkedIn
+    </a>
+  </div>
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
